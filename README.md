@@ -1,4 +1,4 @@
-# nodelist
+# domready
 
 [![browser support](https://ci.testling.com/bloodyowl/domready.png)](https://ci.testling.com/bloodyowl/domready)
 
