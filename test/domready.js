@@ -1,20 +1,17 @@
 var tape = require("tape")
   , domReady = require("../")
 
+domReady(function(){
+  throw "foo"
+})
+
 tape("domready", function(test){
 
   test.plan(2)
   
   domReady(function(){
-    test.assert(/interactive|complete|loaded/.test(document.readyState), "state is ready")
+    test.pass("ignores past errors")
   })
-
-  domReady(function(){
-    throw "foo"
-  })
-  
-  domReady(function(){
-    test.assert(1, "Errors thown do not affect other callbacks")
-  })
+  domReady(function(){test.assert(/interactive|complete|loaded/.test(document.readyState), "state is ready")})
 
 })

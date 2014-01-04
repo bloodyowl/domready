@@ -4,7 +4,7 @@ var stack = []
 
 function async(fn){
   setTimeout(function(){
-    fn(craft)
+    fn()
   }, 0)
 }
 
