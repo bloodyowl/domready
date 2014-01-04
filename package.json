@@ -2,6 +2,7 @@
   "name": "bloody-domready",
   "repository" : "https://github.com/bloodyowl/domready",
   "issues" : "https://github.com/bloodyowl/domready/issues",
+  "version" : "0.1.0",
   "scripts" : {
     "test" : "tape test/*.js"
   },
