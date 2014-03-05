@@ -1,6 +1,9 @@
 {
   "name": "bloody-domready",
-  "repository": "https://github.com/bloodyowl/domready",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloodyowl/domready"
+  },
   "issues": "https://github.com/bloodyowl/domready/issues",
   "version": "0.1.1",
   "scripts": {
@@ -46,5 +49,22 @@
         6
       ]
     }
-  }
+  },
+  "description": "[![browser support](https://ci.testling.com/bloodyowl/domready.png)](https://ci.testling.com/bloodyowl/domready)",
+  "bugs": {
+    "url": "https://github.com/bloodyowl/domready/issues"
+  },
+  "homepage": "https://github.com/bloodyowl/domready",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-stylus": "~0.11.0",
+    "coverify": "~1.0.6",
+    "tape": "~2.3.2"
+  },
+  "author": "bloodyowl",
+  "license": "MIT"
 }
